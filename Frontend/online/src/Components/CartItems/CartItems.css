@@ -1,0 +1,167 @@
+/* General Styles */
+.cartitems {
+  margin: 100px 170px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Styling for each row of cart item data */
+.cartitems-format-main {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  color: #454545;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Product Image */
+.carticon-product-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+/* Quantity button styling */
+.cartitems-quantity {
+  padding: 5px 15px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: default;
+}
+
+/* Remove icon styling */
+.cartitems-format-main img:last-child {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.cartitems-format-main img:last-child:hover {
+  transform: scale(1.2);
+}
+
+/* Bottom Section (Totals and Promo code) */
+.cartitems-down {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0;
+  gap: 40px;
+}
+
+/* Cart Totals Section */
+.cartiems-total {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 200px;
+  gap: 40px;
+}
+
+.cartiems-total h1 {
+  font-size: 24px;
+}
+
+.cartitems-total-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  font-size: 18px;
+}
+
+.cartiems-total button {
+  padding: 12px 20px;
+  background-color: #ff5a5f;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.cartiems-total button:hover {
+  background-color: #e14d4f;
+}
+
+/* Promo Code Section */
+.cartitems-promocode {
+  flex: 1;
+  max-width: 400px;
+}
+
+.cartitems-promocode p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.cartitems-prombox {
+  display: flex;
+  gap: 10px;
+}
+
+.cartitems-prombox input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.cartitems-prombox button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.cartitems-prombox button:hover {
+  background-color: #000;
+}
+
+/* Horizontal divider styling */
+.cartitems hr {
+  height: 2px;
+  background-color: #e2e2e2;
+  border: none;
+  margin: 10px 0;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .cartitems {
+    margin: 50px 20px;
+  }
+
+  .cartitems-format-main {
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 14px;
+    gap: 10px;
+  }
+
+  .cartitems-format-main img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .cartitems-quantity {
+    font-size: 14px;
+    padding: 4px 10px;
+  }
+
+  .cartitems-down {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cartiems-total {
+    margin-right: 0;
+  }
+}

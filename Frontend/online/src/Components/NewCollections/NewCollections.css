@@ -1,0 +1,44 @@
+/* ----------  NewCollections section  ---------- */
+.new-collections {
+  padding: 2rem 1rem;          /* breathing space left & right */
+  text-align: center;          /* centers heading + <hr> */
+}
+
+.new-collections h1 {
+  font-size: 2rem;             /* base size */
+  margin-bottom: 0.5rem;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+.new-collections hr {
+  width: 64px;                 /* little accent line */
+  height: 4px;
+  background: #333;
+  border: 0;
+  margin: 0 auto 1.5rem;       /* centred */
+}
+
+/* ----------  Item card grid  ---------- */
+.collections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+}
+
+/* ----------  Breakpoints  ---------- */
+@media (min-width: 768px) {
+  .new-collections h1 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .new-collections {
+    padding: 3rem 2rem;
+  }
+
+  .collections {
+    gap: 2rem;
+  }
+}

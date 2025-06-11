@@ -1,0 +1,28 @@
+/* Make app-container take full height */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Make main content expand to fill space */
+.main-content {
+  flex: 1;
+}
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+

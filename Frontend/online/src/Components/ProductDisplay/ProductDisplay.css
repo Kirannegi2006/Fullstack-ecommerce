@@ -1,0 +1,140 @@
+.productdisplay {
+  display: flex;
+  padding: 40px;
+  gap: 40px;
+  background-color: #fff;
+}
+
+.productdisplay-left {
+  flex: 1;
+}
+
+.productdisplay-img-list {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.productdisplay-img-list img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+
+.productdisplay-img {
+  width: 100%;
+}
+
+.productdisplay-main-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+
+.productdisplay-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.productdisplay-right h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.productdisplay-right-stars {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.productdisplay-right-stars img {
+  width: 20px;
+  height: 20px;
+}
+
+.productdisplay-right-prices {
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+  align-items: center;
+}
+
+.productdisplay-right-price-old {
+  color: #888;
+  text-decoration: line-through;
+}
+
+.productdisplay-right-price-new {
+  color: #e53935;
+  font-weight: bold;
+}
+
+.productdisplay-right-description {
+  color: #555;
+  line-height: 1.5;
+}
+
+.productdisplay-right-size h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.productdisplay-right-size-options {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.size-box {
+  padding: 10px 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.size-box:hover {
+  background-color: #f1f1f1;
+}
+
+.size-box.selected {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+  font-weight: bold;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: fit-content;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.productdisplay-right-category {
+  font-size: 14px;
+  color: #444;
+}
+
+.productdisplay-right-category span {
+  font-weight: bold;
+}

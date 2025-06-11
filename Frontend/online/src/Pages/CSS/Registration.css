@@ -1,0 +1,98 @@
+.registration-container {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fce3fe;
+    }
+    
+    .registration-form {
+      width: 100%;
+      max-width: 400px;
+      padding: 30px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    .registration-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    
+    .registration-form input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+    
+    .registration-form button {
+      width: 100%;
+      padding: 12px;
+      background-color: #28a745;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 15px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .registration-form button:hover {
+      background-color: #218838;
+    }
+    
+    .login-message {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #e63946;
+      text-align: center;
+    }
+    .login-message {
+  margin-top: 10px;
+ 
+}
+
+.login-message.success {
+  color: green;
+}
+
+.login-message.error {
+  color: red;
+}
+.login-link {
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.login-link a {
+  color: #007bff;
+  text-decoration: none;
+  
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 480px) {
+  .registration-form {
+    padding: 20px;
+  }
+
+  .registration-form button {
+    font-size: 15px;
+    padding: 10px 14px;
+  }
+}
+.registration-container {
+  margin-top: 80px; /* Navbar ki height jitna */
+}
