@@ -1,4 +1,4 @@
 [build]
-base="Frontend"
-publish="Frontend/build"
-command="npm install && npm run build"
+  command = "npm run build"
+  publish = "Frontend/online/dist"
+  base = "Frontend/online"
